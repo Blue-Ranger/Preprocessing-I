@@ -1,6 +1,10 @@
-@backgroundGreen: DarkOliveGreen;
+@backgroundOrange: orange;
 @fontstack: 17px;
 
+.orangetext {
+    color: @backgroundOrange;
+    font-size: 17px;
+}
 div {
     border-radius: 5px;
 
@@ -9,7 +13,7 @@ div {
         z-index: 1;
         height:40px;
         width: 98%;
-        background-color: @backgroundGreen	;
+        background-color: @backgroundGreen;
         margin-bottom: 10px
 
         #name {
@@ -27,6 +31,10 @@ div {
                 font-size: @fontstack;
                 font-family: Verdana, sans-serif;
                 color: #ffffff;
+
+                @media (max-width: 500px) {
+                    color: @backgroundGreen;
+                }
             }
         }
     }    
@@ -38,12 +46,14 @@ h3 {
     #company-name {
         height:2px;
         text-decoration:underline;
+        .orangetext():
 
         #job-title {
             height: 5px;
 
             #job-responsibilities {
                 padding: 1px;
+
             }
         }
     }
