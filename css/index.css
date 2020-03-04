@@ -1,1 +1,103 @@
-/* Compile your LESS file! */
+.orangetext {
+  color: violet;
+  font-size: 17px;
+}
+body {
+  background-color: #6b026b;
+}
+#header {
+  position: fixed;
+  z-index: 1;
+  height: 40px;
+  width: 98%;
+  background-color: purple;
+  margin-bottom: 10px;
+  border: 5px solid red;
+  color: green;
+}
+#header #name {
+  float: left;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+  color: white;
+}
+#header #email {
+  float: right;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+#header #email:hover {
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  #header #email {
+    color: purple;
+  }
+}
+.right {
+  float: left;
+  margin-top: 50px;
+  padding-left: 5px;
+  height: auto;
+  width: 99%;
+  background-color: #04fd04;
+}
+.right h3 {
+  color: red;
+}
+.right ul {
+  color: lavender;
+}
+.right ul li {
+  color: brown;
+}
+.right #company-name {
+  height: 2px;
+  text-decoration: underline;
+  color: violet;
+  font-size: 17px;
+  color: white;
+}
+.right #company-name #job-title {
+  height: 5px;
+}
+.right #company-name #job-title #job-responsibilities {
+  padding: 1px;
+}
+h3 {
+  text-decoration: underline;
+}
+#heading {
+  font-weight: bold;
+}
+#heading table {
+  border: 1px dashed black;
+}
+#heading table td {
+  padding: 2px;
+  border: 1px solid #e88741;
+}
+#heading table td #course-name {
+  font-weight: bold;
+}
+#heading table td #course-name .job-duration {
+  float: right;
+}
+#heading table td #course-name .job-duration .job-title {
+  font-weight: bold;
+}
+#footer {
+  height: 40px;
+  clear: both;
+  position: relative;
+  background-color: purple;
+}
+#footer a:hover {
+  font-weight: bold;
+}
